@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 5000;
 
 /* middlewear timer*/
 
@@ -23,6 +22,7 @@ app.use(express.static("Public"));
 
 /* Server creating*/
 
+const port = 5000;
 app.listen(port, (error) => {
   error
     ? console.log(error)
